@@ -20,3 +20,8 @@ Determin of SELinux is on for SNMP
 
 You will want to turn it on
 # setsebool -P snmpd_disable_trans 1
+
+Reboot your system to have it take effect
+
+or to temp disable it until the next reboot
+# echo 0 > /selinux/enforce
