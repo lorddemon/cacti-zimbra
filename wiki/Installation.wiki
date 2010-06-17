@@ -9,3 +9,13 @@ Text will go here
 = Cacti Script & Template Install =
 
 Text will go here
+
+= SELinux Policy to Disable SNMP executing =
+
+Determin of SELinux is on for SNMP
+
+# getsebool -a | grep snmpd
+# snmpd_disable_trans --> off
+
+You will want to turn it on
+# setsebool -P snmpd_disable_trans 1
