@@ -14,10 +14,9 @@ Text will go here
 
 Determin of SELinux is on for SNMP
 
-`inline code`
-# getsebool -a | grep snmpd
-# snmpd_disable_trans --> off
+
+`inline code` # getsebool -a | grep snmpd
+`inline code`# snmpd_disable_trans --> off
 
 You will want to turn it on
-# setsebool -P snmpd_disable_trans 1
-`inline code`
+`inline code`# setsebool -P snmpd_disable_trans 1
